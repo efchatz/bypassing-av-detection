@@ -75,7 +75,7 @@ With "file-2" the name of the output file, and "90M" is the file size. You can g
 
 
 ## Receiving connections
-To be able to capture the response of these executables, I used two C2 servers, namely Sliver, and Nimplant. Along with Metasploit, which was used for. Also, Rust code requests a binary file to load into the process, while Go code loads a simple shellcode. So, to export such a file from Nimplant, execute:
+To be able to capture the response of these executables, I used two C2 servers, namely Sliver, and Nimplant. In addition to Metasploit, which was used for completeness. Also, Rust code requests a binary file to load into the process, while Go code loads a simple shellcode. So, to export such a file from Nimplant, execute:
 ```
 python NimPlant.py compile
 ```
