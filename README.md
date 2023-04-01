@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project was created to share our code that is mentioned in the following paper. In this repository, we included only the relevant Go, Rust, and C++ code that was created by ChatGPT.
+This project was created to share our code that is mentioned in the following paper. In this repository, we included only the relevant Go, Rust, and C++ code that was created by ChatGPT. The purpose of this project was to demonstrate that with simple and common evading techniques, a malicious executable can evade most, if not all, AV solutions.
 
 
 ### Built With
@@ -89,23 +89,23 @@ mtls
 ```
 
 ## AV Evasion
-The following table refers to the executables with the best evasion rate from the study. This means that all these three executables had included randomly generated files, use the provided code, and for the Rust code, implemented both loaders. As we can observe from the following table, the evasion rate is quite high, especially in the case of Rust code, which managed to evade all most-common AV solutions. This is noted on 31/03/2023.
+The following table refers to the executables with the best evasion rate from the study. This means that all these three executables had included randomly generated files, use the provided code, and for the Rust code, implemented both loaders. For the Paid versions of AVs, I tested in some cases their trial versions.  As we can observe from the following table, the evasion rate is quite high, especially in the case of Rust code, which managed to evade all most-common AV solutions. This is noted on 31/03/2023.
 
-|  AV | Go | Rust | C++ |
-|---|---|---|---|
-|Avast|✗|  ✓ |  ✗ |
-|AVG |  ✗ |  ✓ |  ✗ |
-|  Avira|  ✓ | ✓  |  ✓ |
-|  MS Defender |  ✓ | ✓  | ✓  |
-|  Webroot | ✓  |  ✓ | ✓ |
-|  Eset |  ✗ |  ✓ |  ✓ |
-|  BitDefender |  ✗ | ✓  | ✓ |
-| Kaspersky |  ✓ |✓   |✗ |
-| Sophos |  ✓ |  ✓ | ✓ |
-| MalwareBytes |  ✓ |  ✓ | ✓ | 
-| McAfee |  ✓ | ✓  | ✓  |
-| Norton |  ✓ | ✓  |  ✓ |
-| Results| 8/12| 12/12| 9/12|
+|  AV | Go | Rust | C++ | Free/Paid version|
+|---|---|---|---|---|
+|Avast|✗|  ✓ |  ✗ | Free |
+|AVG |  ✗ |  ✓ |  ✗ | Free |
+|  Avira|  ✓ | ✓  |  ✓ | Free |
+|  MS Defender |  ✓ | ✓  | ✓  | Free |
+|  Webroot | ✓  |  ✓ | ✓ | Paid |
+|  Eset Smart Security Premium |  ✗ |  ✓ |  ✓ | Paid |
+|  Bitdefender Total Security |  ✗ | ✓  | ✓ | Paid |
+| Kaspersky Small Office Security |  ✓ |✓   |✗ | Paid |
+| Sophos Home |  ✓ |  ✓ | ✓ | Paid |
+| MalwareBytes |  ✓ |  ✓ | ✓ | Paid |
+| McAfee Total Security |  ✓ | ✓  | ✓  | Paid |
+| Norton |  ✓ | ✓  |  ✓ | Paid |
+| Results| 8/12| 12/12| 9/12| -- |
 
 <!-- CONTRIBUTING -->
 ## Contributing
