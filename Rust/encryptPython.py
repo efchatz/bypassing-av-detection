@@ -20,9 +20,11 @@ print("[+] IV DIGEST (md5):", random_iv_digest.hexdigest())
 random_key_digest = random_key_digest.digest()
 random_iv_digest = random_iv_digest.digest()
 
+#Rename aes.key to aesSliv.key for the second loader
 with open("aes.key", "wb") as f:
     f.write(random_key_digest)
-
+    
+#Rename aes.iv to aesSliv.iv for the second loader
 with open("aes.iv", "wb") as f:
     f.write(random_iv_digest)
 
@@ -34,6 +36,7 @@ with open("shellcode.bin", "rb") as f:
 
 cipher = encryptor.encrypt(shellcode)
 
+#Rename shellcode.enc to shellcodeSliv.enc for the second loader
 with open("shellcode.enc", "wb") as f:
     f.write(cipher)
 
