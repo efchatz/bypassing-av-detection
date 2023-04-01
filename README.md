@@ -65,7 +65,7 @@ Note: If you want to use Rust with two loaders, after encrypting the first binar
 ```
 nc IP PORT
 ```
-If everything is working correctly, you should receive a "Connection Established!" message. If this message was not received, check if this port is open for inbound traffic in the Windows Firewall settings. If not, simply add a firewall rule to allow this traffic.
+If everything is working correctly, you should receive a "Connection Established!" message and be able to execute cmd commands to receive their response. If this message was not received, check if this port is open for inbound traffic in the Windows Firewall settings. If not, simply add a firewall rule to allow this traffic.
 
 Note: If you want to use random generated files, execute the following command
 ```
