@@ -1,0 +1,18 @@
+[package]
+name = "test"
+version = "0.9.0"
+edition = "2021"
+
+[dependencies]
+ntapi = "0.4.0"
+aes = "0.7.5"
+cfb-mode = "0.7.1"
+
+[dependencies.windows]
+version = "0.23.0"
+features = [
+    "Win32_System_Memory",
+    "Win32_System_Services",
+    "Win32_System_SystemServices",
+    "Win32_Foundation",
+]
