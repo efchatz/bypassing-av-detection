@@ -22,7 +22,7 @@ This section lists all major frameworks/libraries used to create this project.
 ### Requirements
 1. Install Go 1.19.5
 2. Install Rust (nightly-x86_64-pc-windows-msvc toolchain)
-3. Install Visual Studio 2022 (Rust + C++)
+3. Install Visual Studio 2022 (Rust + all Universal/Desktop C++ relevant packages)
 4. Install C++ dependencies from Visual Studio 2022
 5. Install Visual Studio Code (Go)
 6. Install Python 3.10
