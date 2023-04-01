@@ -38,7 +38,10 @@ For Go
 3. Place the shellcode in the encryptGo.go file
 4. Execute the code
 5. Take the encrypted shellcode and place it in the decryptGo.go file
-6. Compile the Go file to retrieve the .exe
+6. Compile the Go file to retrieve the .exe with the following command
+```
+go build -ldflags -H=windowsgui decryptGo.go
+```
 
 For Rust
 1. Place the shellcode.bin file to the same directory as with the encryptPython.py
