@@ -56,6 +56,8 @@ cargo build --release
 ```
 Note: If you want to use Rust with two loaders, after encrypting the first binary file, edit the encryptPython.py file, to change the output name of the second binary file, as explained in the relevant Python comments. If you want to use only one loader, simply comment out the irrelevant code lines, as these have been noted in different comments in the Rust code.
 
+Hint: In case of development, when the .exe process is running, Rust compiler will show "access denied" error, because it cannot replace the previous .exe file, due to the running process. Either stop this process, in this case is named "test" or rename the package name in the "Cargo.toml" file, from test to something different.
+
 ### For C++ (ChatGPT)
 1. Create a WindowsApplication dummy project in Visual Studio 2022
 2. Change debug to release
