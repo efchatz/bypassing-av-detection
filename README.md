@@ -56,7 +56,13 @@ Note: If you want to use Rust with two loaders, after encrypting the first binar
 For C++
 1. Create a WindowsApplication dummy project in Visual Studio 2022
 2. Change debug to release
-2. Compile the code to generate the exe file
+3. Choose the proper port.
+4. Compile the code to generate the exe file
+5. Connect from a Linux host with the following command
+```
+nc IP PORT
+```
+If everything is working correctly, you should receive a "Connection Established!" message. If this message was not received, check if this port is open for inbound traffic in the Windows Firewall settings. If not, simply add a firewall rule to allow this traffic.
 
 Note: If you want to use random generated files, execute the following command
 ```
