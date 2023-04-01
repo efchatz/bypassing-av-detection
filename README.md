@@ -82,7 +82,7 @@ Contributions are what make the open source community such an amazing place to l
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information. The attack tool is provided only for educational purposes and authorized audits. Use it at your own risk.
+Distributed under the MIT License. See `LICENSE` for more information. The relevant code is provided only for educational purposes and authorized audits. Use it at your own risk.
 
 
 
