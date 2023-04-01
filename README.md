@@ -51,6 +51,7 @@ to generate necessary files
 ```
 cargo build --release
 ```
+Note: If you want to use Rust with two loaders, after encrypting the first binary file, edit the encryptPython.py file, to change the output name of the second binary file, as explained in the relevant Python comments. If you want to use only one loader, simply comment out the irrelevant code lines, as these have been noted in different comments in the Rust code.
 
 For C++
 1. Create a WindowsApplication dummy project in Visual Studio 2022
