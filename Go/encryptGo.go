@@ -17,8 +17,6 @@ import (
 	// Sub Repositories
 )
 
-// We learned quite a bit from this post http://stackoverflow.com/questions/18817336/golang-encrypting-a-string-with-aes-and-base64 (Intermernet's answer)
-
 // IsEncryptionOn : A simple system for turning on and off encryption in case you need to see the plain text results in a database for testing (default is On)
 var IsEncryptionOn = true
 
