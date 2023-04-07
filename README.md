@@ -93,21 +93,25 @@ mtls
 ## AV Evasion
 The following table refers to the executables with the best evasion rate from the study. This means that all these three executables had included randomly generated files, use the provided code, and for the Rust code, implemented both loaders. For the Paid versions of AVs, I tested in some cases their trial versions.  As we can observe from the following table, the evasion rate is quite high, especially in the case of Rust code, which managed to evade all most-common AV solutions. This is noted on 31/03/2023.
 
-|  AV | Go | Rust | C++ | Free/Paid version|
-|---|---|---|---|---|
-|Avast|✗|  ✓ |  ✗ | Free |
-|AVG |  ✗ |  ✓ |  ✗ | Free |
-|  Avira|  ✓ | ✓  |  ✓ | Free |
-|  MS Defender |  ✓ | ✓  | ✓  | Free |
-|  Webroot | ✓  |  ✓ | ✓ | Paid |
-|  Eset Smart Security Premium |  ✗ |  ✓ |  ✓ | Paid |
-|  Bitdefender Total Security |  ✗ | ✓  | ✓ | Paid |
-| Kaspersky Small Office Security |  ✓ |✓   |✗ | Paid |
-| Sophos Home |  ✓ |  ✓ | ✓ | Paid |
-| MalwareBytes |  ✓ |  ✓ | ✓ | Paid |
-| McAfee Total Security |  ✓ | ✓  | ✓  | Paid |
-| Norton |  ✓ | ✓  |  ✓ | Paid |
-| Results| 8/12| 12/12| 9/12| -- |
+|  Product name | Go | Rust | C++ | Free/Paid version| AV/EDR|
+|---|---|---|---|---|---|
+|Avast|✗|  ✓ |  ✗ | Free |AV|
+|AVG |  ✗ |  ✓ |  ✗ | Free |AV|
+|  Avira|  ✓ | ✓  |  ✓ | Free |AV|
+|  MS Defender |  ✓ | ✓  | ✓  | Free |AV|
+|  Webroot | ✓  |  ✓ | ✓ | Paid |AV|
+|  Eset Smart Security Premium |  ✗ |  ✓ |  ✓ | Paid |AV|
+|  Bitdefender Total Security |  ✗ | ✓  | ✓ | Paid |AV|
+| Kaspersky Small Office Security |  ✓ |✓   |✗ | Paid |AV|
+| Sophos Home |  ✓ |  ✓ | ✓ | Paid |AV|
+| MalwareBytes |  ✓ |  ✓ | ✓ | Paid |AV|
+| McAfee Total Security |  ✓ | ✓  | ✓  | Paid |AV|
+| Norton |  ✓ | ✓  |  ✓ | Paid |AV|
+| Bitdefender Gravity Zone |  ✗ | ✓  |  ✓ | Paid |EDR|
+| Sophos Central |  ✗ | ✓  |  ✓ | Paid |EDR|
+| ESET Protect Cloud |  ✗ | ✓  |  ✓ | Paid |EDR|
+| MS 365 Defender |  ✓ | ✓  |  ✓ | Paid |EDR|
+| Results| 9/16| 16/16| 13/16| -- |--|
 
 <!-- CONTRIBUTING -->
 ## Contributing
