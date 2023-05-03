@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project was created to share our code that is mentioned in the following paper. In this repository, we included only the relevant Go, Rust, and C++ code that was created by ChatGPT. The purpose of this project was to demonstrate that with simple and common evading techniques, a malicious executable can evade most, if not all, AV solutions. It should be noted that the study focused on Windows 11. So, probably these executables will be working in Windows 10, but I have not tested them.
+This project was created to share our code that is mentioned in the following paper. In this repository, we included all relevant C++, Go, Rust, and C++ code that was created by ChatGPT. The purpose of this project was to demonstrate that with simple and common evading techniques, a malicious executable can evade most, if not all, AV solutions. It should be noted that the study focused on Windows 11. So, probably these executables will be working in Windows 10, but I have not tested them.
 
 
 ### Built With
