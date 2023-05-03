@@ -134,12 +134,12 @@ unsigned int hash(const char* str)
 }
 
 //Bypass cmd pop-up
-int WINAPI WinMain(HINSTANCE hREF, HINSTANCE hPr7yutjghtance,
-	LPSTR lpCm54yrthgfe, int nCm54yrthfgow) {
+int WINAPI WinMain(HINSTANCE hREF, HINSTANCE var1,
+	LPSTR lvar2, int var3) {
 
 	srand(time(NULL));
 	void* pointToExec;
-  void* pointToExecNim;
+        void* pointToExecNim;
 	BOOL boolLoo;
 	BOOL boolLooNim;
 	HANDLE thr;
