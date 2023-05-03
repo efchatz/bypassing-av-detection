@@ -30,19 +30,19 @@ def aesdec(ciphertext, key):
 #Comment file encryption relevant code and uncomment
 #the hex code to encrypt a shellcode, instead of a file
 try:
-    hex_payload = sys.argv[1].strip()
-    plaintext = unhexlify(hex_payload)
-    #with open(sys.argv[1], "rb") as f:
-       # plaintext = f.read()
+    #hex_payload = sys.argv[1].strip()
+    #plaintext = unhexlify(hex_payload)
+    with open(sys.argv[1], "rb") as f:
+        plaintext = f.read()
 except:
-    print("Invalid hex string!")
-    #print("File needed!")
+    #print("Invalid hex string!")
+    print("File needed!")
     sys.exit()
 
 ciphertext = aesenc(plaintext, KEY)
 print('AESkey[] = { 0x' + ', 0x'.join(hex(x)[2:] for x in KEY) + ' };')
-#open("file_sliv.ico", "wb").write(ciphertext)
-print('payload[] = { 0x' + ', 0x'.join(hex(x)[2:] for x in ciphertext) + ' };')
+open("file_sliv.ico", "wb").write(ciphertext)
+#print('payload[] = { 0x' + ', 0x'.join(hex(x)[2:] for x in ciphertext) + ' };')
 #decryption
-decrypted_plaintext = aesdec(ciphertext, KEY)
-print('Decrypted plaintext{ 0x' + ', 0x'.join(hex(x)[2:] for x in decrypted_plaintext) + ' };')
+#decrypted_plaintext = aesdec(ciphertext, KEY)
+#print('Decrypted plaintext{ 0x' + ', 0x'.join(hex(x)[2:] for x in decrypted_plaintext) + ' };')
