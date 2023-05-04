@@ -91,7 +91,7 @@ Note: If you want to use random generated files, execute the following command
 ```
 head -c 90M </dev/urandom > file-1
 ```
-With "file-2" the name of the output file, and "90M" is the file size. You can generate and include as many files as you like.
+With "file-1" the name of the output file, and "90M" is the file size. You can generate and include as many files as you like.
 
 
 ## Receiving connections
