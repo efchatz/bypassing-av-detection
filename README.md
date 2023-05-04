@@ -152,5 +152,5 @@ Efstratios Chatzoglou -  efchatzoglou@gmail.com
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-I would like to thank the developers that created the following three repositories, which they assisted into creating this one. The Go code is forked from https://github.com/sezzle/simpleGoAES, and https://github.com/Ne0nd0g/go-shellcode/tree/master/cmd/CreateProcess and the Rust code from https://github.com/cr7pt0pl4gu3/Pestilence. Also, I would like to thank the awesome C2 tools, Sliver https://github.com/BishopFox/sliver, and Nimplant https://github.com/chvancooten/NimPlant.
+I would like to thank the developers that created the following three repositories, which they assisted into creating this one. The Go code is forked from https://github.com/sezzle/simpleGoAES, and https://github.com/Ne0nd0g/go-shellcode/tree/master/cmd/CreateProcess and the Rust code from https://github.com/cr7pt0pl4gu3/Pestilence. Also, I would like to thank the awesome C2 tools, Sliver https://github.com/BishopFox/sliver, and Nimplant https://github.com/chvancooten/NimPlant, along with the Sector7 courses that gave me the idea for this project. Lastly, I would like to thank @gbkaragiannidis who helped me with the FindTarget function of C++ code.
 
