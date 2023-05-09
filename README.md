@@ -109,7 +109,7 @@ mtls
 ```
 
 ## AV Evasion
-The following table refers to the executables with the best evasion rate from the study. This means that all these three executables had included randomly generated files, use the provided code, and for the Rust code, implemented both loaders. For the Paid versions of AVs, I tested in some cases their trial versions.  As we can observe from the following table, the evasion rate is quite high, especially in the case of Rust code, which managed to evade all most-common AV solutions. This is noted on 10/04/2023.
+The following table refers to the executables with the best evasion rate from the study. This means that all these three executables had included randomly generated files, use the provided code, and for the Rust code, implemented both loaders. For the Paid versions of AVs, I tested in some cases their trial versions.  As we can observe from the following table, the evasion rate is quite high, especially in the case of Rust code, which managed to evade all most-common AV solutions. This is noted on 10/04/2023. More details of the AV evasion are mentioned in the relevant paper.
 
 |  Product name | Go | C++ | Rust | Free/Paid version| AV/EDR|
 |---|---|---|---|---|---|
