@@ -94,8 +94,8 @@ head -c 90M </dev/urandom > file-1
 With "file-1" the name of the output file, and "90M" is the file size. You can generate and include as many files as you like.
 
 
-## Receiving connections
-To be able to capture the response of these executables, I used two C2 servers, namely Sliver, and Nimplant. In addition to Metasploit, which was used for completeness. Also, Rust code requests a binary file to load into the process, while Go code loads a simple shellcode. So, to export such a file from Nimplant, execute:
+## Receiving connections (generate bin file)
+To be able to capture the response of these executables, I used two C2 servers, namely Sliver, and Nimplant. In addition to Metasploit, which was used for completeness. Also, C++ and Rust codes request a binary file to load into the process, while Go code loads a simple shellcode. So, to export such a file from Nimplant, execute:
 ```
 python NimPlant.py compile
 ```
