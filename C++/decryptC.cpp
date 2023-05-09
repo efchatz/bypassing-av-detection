@@ -122,10 +122,10 @@ unsigned int hash(const char* str)
 {
 	char junk1[] = { 0x5c, 0x50, 0x40, 0x5d };
 	char junk2[] = { 0x6b, 0x67, 0x75, 0x64, 0x63, 0x71, 0x70, 0x36, 0x65, 0x39, 0x6d, 0x37, 0x52, 0x54, 0x45, 0x74 };
-	XOR(sJKDSJDjsd, sizeof(sJKDSJDjsd), ssdaassss, sizeof(ssdaassss));
-	unsigned int asasdrfe;
-	sscanf_s(sJKDSJDjsd, "%d", &asasdrfe);
-	unsigned int hash = asasdrfe;
+	XOR(junk1, sizeof(junk1), junk2, sizeof(junk2));
+	unsigned int x;
+	sscanf_s(junk1, "%d", &x);
+	unsigned int hash = x;
 	int c;
 	while (c = *str++)
 		hash = ((hash << 5) + hash) + c;
